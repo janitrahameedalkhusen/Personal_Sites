@@ -1427,3 +1427,121 @@ body.offcanvas {
 
 .js .animate-box {
   opacity: 0; }
+
+  /* Hero section custom */
+#colorlib-hero .flexslider .slides li {
+  background-position: center bottom !important; /* foto mepet ke bawah */
+  background-size: cover !important;
+  min-height: 100vh; /* full tinggi layar */
+}
+
+#colorlib-hero .slider-text > .slider-text-inner {
+  text-align: left !important; /* geser text ke kiri */
+  padding-left: 40px; /* jarak dari kiri */
+  padding-right: 20px;
+}
+
+#colorlib-hero .slider-text .desc h1 {
+  font-size: 48px; /* biar gede di desktop */
+  line-height: 1.2;
+}
+
+#colorlib-hero .slider-text .desc h2 {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  #colorlib-hero .slider-text > .slider-text-inner {
+    padding-left: 20px; /* di HP jangan terlalu jauh */
+    text-align: left !important;
+  }
+
+  #colorlib-hero .slider-text .desc h1 {
+    font-size: 28px;
+  }
+
+  #colorlib-hero .slider-text .desc h2 {
+    font-size: 16px;
+  }
+}
+/* Hilangin sisa kosong kanan di hero */
+#colorlib-hero {
+  width: 100vw !important;   /* full lebar layar */
+  overflow-x: hidden !important;
+}
+
+#colorlib-hero .flexslider .slides li {
+  background-size: cover !important;
+  background-position: center bottom !important;
+}
+/* Geserin teks "Hai! Saya Hameed" lebih ke kiri */
+#colorlib-hero .slider-text .desc h1 {
+  text-align: left !important;
+  margin-left: 0 !important;
+  padding-left: 0px !important;
+}
+
+#colorlib-hero .slider-text .desc h2 {
+  text-align: left !important;
+  margin-left: 0 !important;
+  padding-left: 20px !important;
+}
+
+@media screen and (min-width: 992px) {
+  #colorlib-hero .slider-text .desc h1,
+  #colorlib-hero .slider-text .desc h2 {
+    padding-left: 60px !important; /* di desktop agak lebih jauh */
+  }
+}
+/* Geserin teks "Ini adalah blog pribadi saya" ke kiri */
+#colorlib-hero .slider-text .desc h2 {
+  text-align: left !important;
+  margin-left: 0 !important;
+  padding-left: 0px !important;
+}
+
+@media screen and (min-width: 992px) {
+  #colorlib-hero .slider-text .desc h2 {
+    padding-left: 60px !important; /* desktop lebih jauh */
+  }
+}
+/* Geserin blok teks hero agak turun */
+#colorlib-hero .slider-text .desc {
+  margin-top: 160px; /* atur jarak dari atas */
+}
+
+@media screen and (min-width: 992px) {
+  #colorlib-hero .slider-text .desc {
+    margin-top: 120px; /* di desktop lebih turun */
+  }
+}
+/* Atur posisi foto hero biar agak naik */
+#colorlib-hero .flexslider .slides li {
+  background-position: center 40% !important;
+}
+/* Hero background khusus HP biar agak naik */
+@media screen and (max-width: 768px) {
+  #colorlib-hero .flexslider .slides li {
+    background-position: center 30% !important; /* fokus ke atas */
+  }
+}
+/* Paksa atur posisi foto hero di desktop */
+@media screen and (min-width: 992px) {
+  #colorlib-hero .flexslider .slides li.flex-active-slide {
+    background-position: 0% 100% bottom !important;
+  }
+}
+/* Geser foto hero ke kiri khusus desktop */
+@media screen and (min-width: 992px) {
+  #colorlib-hero .flexslider .slides li[style*="img_bg_1"] {
+    background-position: 40% center !important; /* geser kiri */
+    background-size: cover !important;
+  }
+}
+/* Paksa geser foto img_bg_1 ke kiri di desktop */
+@media screen and (min-width: 992px) {
+  #colorlib-hero .flexslider .slides li[style*="img_bg_1.jpg"] {
+    background-position-x: 35% !important; /* geser kiri */
+    background-position-y: center !important;
+  }
+}
